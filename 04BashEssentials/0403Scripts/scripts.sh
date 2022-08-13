@@ -9,7 +9,7 @@ echo "echo \"Creating folder\"" >> ./script.sh
 cat <> script.sh
 mkdir $dir_name
 ls -l | grep "^d"
-echo "echo \"Creating files\""
+echo "Creating files"
 touch ./Name
 touch ./Surname
 ls $dir_name
