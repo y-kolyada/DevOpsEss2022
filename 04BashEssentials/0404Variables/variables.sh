@@ -2,12 +2,13 @@
 # variables.sh
 #
 NAME="Name_Surname"
+DIR="./homework/"
 cd ~
 
-if [ -d "./homework/" ]; then
-    cd ~/homework
+if [ -d $DIR ]; then
+    cd $DIR
 else
-    mkdir homework
+    mkdir $DIR
 fi
 
 echo "FILE=""new_file"" > ./vars
