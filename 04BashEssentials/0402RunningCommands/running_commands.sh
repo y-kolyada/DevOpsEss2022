@@ -4,6 +4,7 @@
 cd ~
 mv homework homework_tmp
 mkdir homework
+cd homework
 touch ./file1
 cp file1 file2
 echo "#!/bin/bash" > ./file2
