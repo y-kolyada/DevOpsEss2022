@@ -2,7 +2,7 @@
 # running_commands.sh
 #
 cd ~
-mv homework homework_orig
+mv homework homework_tmp
 mkdir homework
 touch ./file1
 cp file1 file2
