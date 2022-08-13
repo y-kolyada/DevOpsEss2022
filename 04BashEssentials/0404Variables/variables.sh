@@ -11,7 +11,7 @@ else
     mkdir $DIR
 fi
 
-echo "FILE=""new_file"" > ./vars
+echo "FILE=\"new_file\"" > ./vars
 source ./vars
 
 mkdir $NAME
