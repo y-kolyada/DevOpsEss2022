@@ -6,7 +6,7 @@ cd ~/homework
 echo "#!`which bash`" > ./script.sh
 chmod a+x ./script.sh
 echo "echo \"Creating folder\"" >> ./script.sh
-cat <> script.sh
+tee -a script.sh <<EOF
 mkdir $dir_name
 ls -l | grep "^d"
 echo "Creating files"
