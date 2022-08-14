@@ -25,7 +25,7 @@ tee -a my_script.sh << EOF
 #!/bin/bash
 #
 PATH=$PATH
-export PATH=$PATH
+export PATH=\$PATH
 echo \$PATH
 EOF
 chmod a+x my_script.sh
