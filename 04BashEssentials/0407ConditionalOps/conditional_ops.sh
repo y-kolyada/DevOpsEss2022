@@ -16,7 +16,9 @@ fi
 [[ $1 == $2 ]]
 echo "Exit code: $?"
 
-[[ $1 > $2 ]]
+arr=$@
+
+[[ ${#arr[1]} > ${#arr[2]} ]]
 echo "Exit code: $?"
-echo $#1
-echo $#2
+echo ${#arr[1]}
+echo ${#arr[2]}
