@@ -24,6 +24,7 @@ echo "Last args: $_"
 ps ef
 echo "Proc Num: $$"
 echo "Proc Num of last command in bg: $!"
+IFS=","
 echo $*
 echo "$*"
 echo $@
