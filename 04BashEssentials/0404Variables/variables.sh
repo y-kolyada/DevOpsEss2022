@@ -33,3 +33,4 @@ done
 
 echo "arr2[0]=$arr2[0]"
 echo "arr2[1]=$arr2[1]"
+echo "arr2[2]=$arr2[2]"
