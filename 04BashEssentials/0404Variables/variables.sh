@@ -37,12 +37,12 @@ echo "arr2[2]=${arr2[2]}"
 
 echo "arr1[@]=${arr1[@]}"
 echo "arr2[@]=${arr2[@]}"
-echo '#arr1[1]=${#arr1[1]}'
-echo '#arr2[1]=${#arr2[1]}'
-echo '#arr1[@]=${#arr1[1]}'
-echo '#arr2[@]=${#arr2[@]}'
+echo "#arr1[1]=${#arr1[1]}"
+echo "#arr2[1]=${#arr2[1]}"
+echo "#arr1[@]=${#arr1[1]}"
+echo "#arr2[@]=${#arr2[@]}"
 
 
-sum=( arr2[0] + arr2[1] + arr2[2] )
+sum=(( arr2[0]+arr2[1]+arr2[2] )
 
 echo "Sum=$sum"
