@@ -21,5 +21,10 @@ echo "4th arg: ${4}"
 [[ $2 -eq $4 ]]
 echo "Compare 2th and 4th args: $?"
 echo "Last args: $_"
+ps ef
 echo "Proc Num: $$"
 echo "Proc Num of last command in bg: $!"
+echo $*
+echo "$*"
+echo $@
+echo "$@"
