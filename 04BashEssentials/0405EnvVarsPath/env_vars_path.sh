@@ -20,12 +20,12 @@ WDIR=`pwd`
 export PATH=$PATH:$WDIR
 echo "PATH: $PATH"
 
+echo "export PATH=\$PATH:$WDIR" >> ~/.bashrc
+
 rm -f my_script.sh
 tee -a my_script.sh << EOF
 #!/bin/bash
 #
-PATH=$PATH
-export PATH=\$PATH
 echo \$PATH
 EOF
 chmod a+x my_script.sh
