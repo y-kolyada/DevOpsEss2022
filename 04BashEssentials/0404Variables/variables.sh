@@ -25,6 +25,7 @@ ls $NAME
 arr1=("one" "two" "three")
 arr2[0]=0
 arr2[1]=1
+arr2[2]=2
 
 for i in "${arr1[@]}"; do
     echo $i
