@@ -15,7 +15,7 @@ else
 fi
 
 export SURNAME=$NAME
-env
+printenv
 WDIR=`pwd`
 export PATH=$PATH:$WDIR
 echo $PATH
@@ -24,7 +24,7 @@ env $PATH
 tee -a my_script.sh << EOF
 #!/bin/bash
 #
-env $PATH
+echo $PATH
 EOF
 chmod a+x my_script.sh
 
