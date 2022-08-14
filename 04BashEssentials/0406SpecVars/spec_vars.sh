@@ -13,10 +13,10 @@ else
     cd $DIR
 fi
 
-echo "Scipt name: $0"
+echo "Script name: $0"
 echo "Script args: $*"
 echo "Number of arguments: $#"
-echo "2dn arg: $2"
+echo "2nd arg: $2"
 echo "4th arg: ${4}"
-[[ ${2} -eq ${4} ]]
+[[ 2 -eq 2 ]]
 echo "Compare 2th and 4th args: $?"
