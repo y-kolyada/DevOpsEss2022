@@ -43,7 +43,7 @@ echo "#arr1[@]=${#arr1[@]}"
 echo "#arr2[@]=${#arr2[@]}"
 
 
-IFS='+' sum1=$(echo "scale=1;${arr[*]}"|bc)
+IFS='+' sum1=$(echo "scale=1;${arr2[*]}"|bc)
 echo "Sum1=$sum1"
 sum2=$((arr2[0]+arr2[1]+arr2[2]))
 echo "Sum2=$sum2"
