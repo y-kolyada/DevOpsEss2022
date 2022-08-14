@@ -17,6 +17,8 @@ fi
 echo "Exit code: $?"
 
 arr=$@
+echo $arr
+echo $@
 
 [[ ${#arr[1]} > ${#arr[2]} ]]
 echo "Exit code: $?"
