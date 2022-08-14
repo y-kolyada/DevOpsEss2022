@@ -20,7 +20,8 @@ WDIR=`pwd`
 export PATH=$PATH:$WDIR
 echo "PATH: $PATH"
 
-tee -a my_script.sh < EOF
+rm -f my_script.sh
+tee -a my_script.sh << EOF
 #!/bin/bash
 #
 export PATH
