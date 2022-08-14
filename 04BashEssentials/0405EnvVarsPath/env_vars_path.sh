@@ -24,7 +24,8 @@ rm -f my_script.sh
 tee -a my_script.sh << EOF
 #!/bin/bash
 #
-export $PATH
+PATH=$PATH
+export PATH
 echo \$PATH
 EOF
 chmod a+x my_script.sh
