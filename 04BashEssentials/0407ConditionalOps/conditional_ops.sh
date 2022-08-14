@@ -14,12 +14,28 @@ else
 fi
 
 [[ $1 == $2 ]]
-echo "Exit code: $?"
+echo "$?"
 
-arr=$@
-echo $arr
+i=0
+for a in $@; do
+  arr[i]=$a
+  ((i=i+1))
+done
 
-[[ $arr[1] > $arr[2] ]]
-echo "Exit code: $?"
-echo "arr[1]=$arr[1]"
-echo "arr[2]=$arr[2]"
+# echo $arr
+
+[[ ${arr[0]} > ${arr[1]} ]]
+echo "$?"
+#echo "arr[0]=${arr[0]}"
+#echo "arr12]=${arr[1]}"
+
+
+#export TEST="test"
+[[ -n `printenv TEST` ]]
+  echo "$?"
+
+[[ $3 -ne $4 ]]
+  echo $?
+
+[[ $3 -ge $4 ]]
+  echo $?
