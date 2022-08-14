@@ -31,3 +31,4 @@ for i in "${arr1[@]}"; do
 done
 
 echo "arr2[0]=$arr2[0]"
+echo "arr2[1]=$arr2[1]"
