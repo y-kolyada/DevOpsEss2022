@@ -21,3 +21,13 @@ mkdir $NAME
 touch ./$NAME/$FILE
 ls .
 ls $NAME
+
+arr1=("one" "two" "three")
+arr2[0]=0
+arr2[1]=1
+
+for i in "${arr1[@]}"; do
+    echo $i
+done
+
+echo "arr2[0]=$arr2[0]"
