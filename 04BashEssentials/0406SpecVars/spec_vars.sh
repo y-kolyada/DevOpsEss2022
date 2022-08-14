@@ -18,5 +18,5 @@ echo "Script args: $*"
 echo "Number of arguments: $#"
 echo "2nd arg: $2"
 echo "4th arg: ${4}"
-[[ 2 -eq 2 ]]
+[[ $2 -eq $4 ]]
 echo "Compare 2th and 4th args: $?"
