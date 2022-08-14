@@ -23,7 +23,7 @@ echo "PATH: $PATH"
 tee -a my_script.sh << EOF
 #!/bin/bash
 #
-echo $PATH
+echo '$PATH'
 EOF
 chmod a+x my_script.sh
 
