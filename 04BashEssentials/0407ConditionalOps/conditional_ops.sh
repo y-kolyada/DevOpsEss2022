@@ -18,9 +18,8 @@ echo "Exit code: $?"
 
 arr=$@
 echo $arr
-echo $@
 
-[[ ${#arr[1]} > ${#arr[2]} ]]
+[[ $arr[1] > $arr[2] ]]
 echo "Exit code: $?"
-echo "${#arr[1]}"
-echo "${#arr[2]}"
+echo "arr[1]=$arr[1]"
+echo "arr[2]=$arr[2]"
