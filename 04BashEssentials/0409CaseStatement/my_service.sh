@@ -16,7 +16,7 @@ fi
 case $1 in
   start)
     echo "Service started"
-    sleep 9999
+    sleep 9999 &
     ;;
   stop)
     PROC=$$
@@ -25,10 +25,10 @@ case $1 in
     echo "Service stopped"
     ;;
   restart)
-    .my_service.sh stop
-    .my_service.sh start
+    bash ./my_service.sh stop
+    bash ./my_service.sh start
     ;;
-  {*,help}
+  *)
     echo "
     - add your service to PATH
     - run your script with start and restart arguments in background
