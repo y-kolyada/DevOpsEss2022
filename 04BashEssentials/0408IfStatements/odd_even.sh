@@ -31,12 +31,14 @@ echo "#!`which bash`" > ./my_script.sh
 chmod a+x ./my_script.sh
 
 tee -a my_script.sh << EOF
-LAST= \$_
+LAST=\$_
 
-if [ \$# -lt 2 ]; then
-  echo \$1
-elif [ \$# -gt 2 ] && [ \$# -lt 4 ]; then
-  echo \$LAST
+if [ $# -lt 2 ]; then
+  echo $1
+elif [ $# -gt 2 ] && [ $# -lt 4 ]; then
+  echo ${@:$#}
+  echo ${*: -1}  
+  echo ${!#}
 else
   echo "Invalid number of arguments"
 fi
