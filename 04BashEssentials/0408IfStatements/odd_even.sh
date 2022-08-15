@@ -27,7 +27,7 @@ fi
 
 rm -f my_script.sh
 
-echo "#!`which bash`" > ./script.sh
+echo "#!`which bash`" > ./my_script.sh
 chmod a+x ./my_script.sh
 
 tee -a my_script.sh << EOF
