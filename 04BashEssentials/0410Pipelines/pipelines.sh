@@ -19,4 +19,4 @@ if [ $ERR -eq 0 ] && [ $FATAL -eq 0 ] ; then echo "Hello" > my_file ; ERR=$? ; e
 if [ $ERR -eq 0 ] && [ $FATAL -eq 0 ] ; then cat my_file > log ; ERR=$? ; else FATAL=1 ; fi 
 if [ $ERR -eq 1 ] || [ $FATAL -eq 1 ] ; then echo "Somefing went wrong" ; else echo "Ok!" ; fi
 
-echo "nginx:x:973:970:Nginx web server:/var/lib/nginx:/sbin/nologin" | sed -e "s/\/sbin\/nologin/\/bin\/bash/g" > ./passwd
+echo "nginx:x:973:970:Nginx web server:/var/lib/nginx:/sbin/nologin" | grep "/sbin/nologin" | sed -e "s/\/sbin\/nologin/\/bin\/bash/g" > ./passwd
