@@ -2,6 +2,7 @@
 # odd_even.sh
 #
 DIR="./homework"
+cd ~
 
 if [ -d $DIR ]; then
     cd $DIR
