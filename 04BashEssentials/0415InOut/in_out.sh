@@ -4,45 +4,22 @@
 DIR="./homework"
 cd ~
 
-if [ -d $DIR ]; then
-    cd $DIR
-    echo "cd into $DIR..."
-else
-    mkdir $DIR
-    echo "mkdir $DIR..."
-    cd $DIR
-fi
+read -p "Input file name: " f_name
 
-f_result=""
+cat << 'EOF' > $f_name
+An old silent pond...
+A frog jumps into the pond,
+splash! Silence again.
 
-fun_1 () {
-  i=1
-  for n in ${@}; do
-    (( mul = n * n ))
-    [[ $print_yn == "y" ]] && echo -n "$mul "
-    arr[i]=$n
-    [[ $i -eq 1 ]] && f_result=$mul
-    (( i++ ))
-  done
-}
+Autumn moonlight-
+a worm digs silently
+into the chestnut.
 
-fun_2 () {
-  for n in ${@}; do
-    fun_1 $n
-    (( mul_1 = f_result + 1 ))
-    echo $mul_1
-  done
-}
+In the twilight rain
+these brilliant-hued hibiscus -
+A lovely sunset.
+EOF
 
+cat $f_name
 
-print_yn="y"
-fun_1 "5" "6" "1" "3" "9"
-echo ""
-
-print_yn="n"
-fun_2 ${@}
-echo ""
-
-: <<'COMMENTS'
-#
-COMMENTS
+echo "Task finished" >2
