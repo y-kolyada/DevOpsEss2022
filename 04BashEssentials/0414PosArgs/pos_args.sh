@@ -14,7 +14,6 @@ else
 fi
 
 i=1
-
 for n in ${@}; do
   echo "Arg$i: $n"
   arr[i]=$n
@@ -22,8 +21,8 @@ for n in ${@}; do
 done
 
 echo ""
-i=1
 
+i=1
 for n in ${@}; do
   if [ $i -eq $# ]; then
     (( res=arr[i]+arr[1] ))
